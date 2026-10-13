@@ -32,6 +32,8 @@
   --vcu-muted: #5f6873;
   --vcu-paper: #f6f4ef;
   --vcu-line: rgba(16, 24, 32, 0.12);
+  --fsu-garnet: #782f40;
+  --fsu-garnet-hover: #572932;
   --body-font: 'Open Sans', sans-serif;
 }
 
@@ -229,8 +231,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 0.8rem;
   margin-bottom: 1rem;
-  color: #f8b800;
+  background-color: var(--fsu-garnet);
+  border-radius: 0.25rem;
+  color: #fff;
   font-weight: 600;
+  padding: 0.3rem 0.55rem;
+  width: fit-content;
 }
 
 .hero-title {
@@ -254,16 +260,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-actions .btn-primary {
-  background-color: #f8b800;
+  background-color: var(--fsu-garnet);
   border: none;
-  color: #101820;
+  color: #fff;
   font-weight: 600;
 }
 
 .hero-actions .btn-primary:hover,
 .hero-actions .btn-primary:focus {
-  background-color: #e0a700;
-  color: #101820;
+  background-color: var(--fsu-garnet-hover);
+  color: #fff;
 }
 
 .hero-actions .btn-outline-light {
@@ -274,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-quote {
   background: rgba(255, 255, 255, 0.08);
-  border-left: 4px solid #f8b800;
+  border-left: 4px solid var(--fsu-garnet);
   padding: 1.25rem 1.5rem;
   margin: clamp(1.2rem, 2vw, 1.75rem) 0 0;
   max-width: 420px;
@@ -297,8 +303,8 @@ h1, h2, h3, h4, h5, h6 {
 .hero-highlight {
   margin-top: 1.35rem;
   background: rgba(8, 16, 28, 0.6);
-  border: 1px solid rgba(248, 180, 0, 0.35);
-  border-top: 3px solid rgba(248, 180, 0, 0.85);
+  border: 1px solid var(--fsu-garnet);
+  border-top: 3px solid var(--fsu-garnet);
   border-radius: 0.85rem;
   padding: 1rem 1rem 1.1rem;
   max-width: 520px;
@@ -306,12 +312,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .highlight-kicker {
-  color: #f8b800;
+  background-color: var(--fsu-garnet);
+  border-radius: 0.25rem;
+  color: #fff;
+  display: inline-block;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1rem;
   font-size: 0.78rem;
   opacity: 0.95;
+  padding: 0.25rem 0.45rem;
 }
 
 .highlight-title {
@@ -340,17 +350,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .highlight-actions .btn-primary {
-  background-color: #f8b800;
-  border: 1px solid #f8b800;
-  color: #101820;
+  background-color: var(--fsu-garnet);
+  border: 1px solid var(--fsu-garnet);
+  color: #fff;
   font-weight: 700;
 }
 
 .highlight-actions .btn-primary:hover,
 .highlight-actions .btn-primary:focus {
-  background-color: #e0a700;
-  border-color: #e0a700;
-  color: #101820;
+  background-color: var(--fsu-garnet-hover);
+  border-color: var(--fsu-garnet-hover);
+  color: #fff;
 }
 
 .highlight-actions .btn-outline-light {
@@ -372,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .proof-item {
-  border-left: 3px solid var(--vcu-gold);
+  border-left: 3px solid var(--fsu-garnet);
   padding: 0.15rem 1rem;
 }
 
