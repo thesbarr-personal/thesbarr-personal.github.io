@@ -217,11 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-photo {
-  background-image: url("../images/SBarr-Headshot-VCU.jpg");
-  background-image: image-set(
-    url("../images/SBarr-Headshot-VCU.webp") type("image/webp"),
-    url("../images/SBarr-Headshot-VCU.jpg") type("image/jpeg")
-  );
+  background-image: url("../images/updatedheadshot.jpg");
   background-position: 50% 20%;
   background-size: cover;
   background-repeat: no-repeat;

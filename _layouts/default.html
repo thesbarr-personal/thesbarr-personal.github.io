@@ -6,7 +6,7 @@
   {% assign meta_title = page.og_title | default: page.title %}
   {% assign meta_description = page.og_description | default: page.description | default: site.description %}
   {% assign canonical_url = site.url | append: page.url %}
-  {% assign social_image_path = page.og_image | default: site.social_image | default: '/images/SBarr-Headshot-VCU.jpg' %}
+  {% assign social_image_path = page.og_image | default: site.social_image | default: '/images/updatedheadshot.jpg' %}
   {% assign social_image_relative = social_image_path | relative_url %}
   {% assign social_image_url = site.url | append: social_image_relative %}
   <meta name="description" content="{{ meta_description }}" />

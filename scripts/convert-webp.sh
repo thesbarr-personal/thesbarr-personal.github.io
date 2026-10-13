@@ -8,7 +8,7 @@ fi
 
 files=(
   "images/SBarr-Headshot-Web.jpg"
-  "images/SBarr-Headshot-VCU.jpg"
+  "images/updatedheadshot.jpg"
   "images/Contact_Background.jpg"
   "images/bg/brick.jpg"
   "images/projector.png"
