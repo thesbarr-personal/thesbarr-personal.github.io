@@ -55,12 +55,12 @@ body_class: beyond-page
         <p class="mb-0">Grant Dollars Awarded to Students</p>
       </div>
       <div class="col-md-3 mb-4">
-        <h1 class="display-3 fw-bold text-white" data-countto="29,288">0</h1>
-        <p class="mb-0">VCU Enrollment</p>
+        <h1 class="display-3 fw-bold text-white" data-countto="46,184">0</h1>
+        <p class="mb-0">FSU Enrollment (Fall 2025)</p>
       </div>
       <div class="col-md-3 mb-4">
-        <h1 id="vcuDays" class="display-3 fw-bold text-white" data-countto="0">0</h1>
-        <p class="mb-0">Days on the Job at VCU (And Counting)</p>
+        <h1 id="fsuDays" class="display-3 fw-bold text-white" data-countto="1">0</h1>
+        <p class="mb-0">Days on the Job at FSU (And Counting)</p>
       </div>
     </div>
   </div>
@@ -115,9 +115,11 @@ body_class: beyond-page
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var startDate = new Date('2015-01-05T00:00:00');
-    var diffDays = Math.floor((Date.now() - startDate.getTime()) / 86400000);
-    var daysElem = document.getElementById('vcuDays');
+    var startDate = Date.UTC(2026, 9, 12);
+    var today = new Date();
+    var currentDate = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+    var diffDays = Math.max(1, Math.round((currentDate - startDate) / 86400000) + 1);
+    var daysElem = document.getElementById('fsuDays');
 
     if (daysElem) {
       daysElem.setAttribute('data-countto', diffDays.toString());

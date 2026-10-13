@@ -26,7 +26,6 @@
    1. Root Variables
 ==================================================== */
 :root {
-  --vcu-gold: #ffb400;
   --vcu-black: #101820;
   --vcu-ink: #182331;
   --vcu-muted: #5f6873;
@@ -72,7 +71,7 @@ a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 3px solid var(--vcu-gold);
+  outline: 3px solid var(--fsu-garnet);
   outline-offset: 3px;
 }
 
@@ -110,8 +109,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.gold {
-  color: var(--vcu-gold);
+.gold,
+.garnet {
+  color: var(--fsu-garnet);
 }
 
 .section-title {
@@ -135,30 +135,28 @@ h1, h2, h3, h4, h5, h6 {
   height: 36px;
 }
 
+.navbar-nav {
+  gap: 0.2rem;
+}
+
 .navbar-nav .nav-link {
+  border-radius: 0.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 16px; /* Adjust to your original preference */
 }
 
 .navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-  color: var(--vcu-gold);
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  background-color: var(--fsu-garnet);
+  color: #fff !important;
 }
 
 .nav-link-bold {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.nav-hover-gold:hover,
-.nav-hover-gold:focus {
-  color: #f8b800 !important;
-}
-
-.navbar-nav .nav-link.active {
-  color: #f8b800 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -596,7 +594,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .experience-section li::marker {
-  color: var(--vcu-gold);
+  color: var(--fsu-garnet);
 }
 
 /* ====================================================
@@ -620,14 +618,14 @@ h1, h2, h3, h4, h5, h6 {
 .about-profile-link {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--vcu-gold);
+  text-decoration-color: var(--fsu-garnet);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;
 }
 
 .about-profile-link:hover,
 .about-profile-link:focus {
-  color: #765300;
+  color: var(--fsu-garnet-hover);
 }
 
 .about-img {
@@ -768,13 +766,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .presentations-section .container {
   background: rgba(255, 255, 255, 0.9);
-  border-left: 5px solid var(--vcu-gold);
+  border-left: 5px solid var(--fsu-garnet);
   box-shadow: 0 18px 36px rgba(16, 24, 32, 0.12);
   padding: clamp(1.5rem, 4vw, 3rem);
 }
 
 .section-title span {
-  color: var(--vcu-gold);
+  color: var(--fsu-garnet);
 }
 /* ====================================================
    7. Resume Section
@@ -844,15 +842,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-form button {
-  background-color: var(--vcu-gold);
+  background-color: var(--fsu-garnet);
   border: none;
-  color: #000;
+  color: #fff;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
 }
 
 .contact-form button:hover {
-  background-color: #e6a700;
+  background-color: var(--fsu-garnet-hover);
+  color: #fff;
 }
 
 .contact-honeypot {
@@ -931,7 +930,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer a {
-  color: var(--vcu-gold);
+  color: var(--fsu-garnet);
 }
 
 .footer a:hover {
@@ -983,10 +982,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ====================================================
    10. Utilities
 ==================================================== */
-.nav-hover-gold:hover {
-  color: var(--vcu-gold) !important;
-}
-
 .hover-animate {
   transition: all 0.3s ease-in-out;
 }
@@ -1123,8 +1118,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .notfound-page .notfound-content a.btn {
-  background-color: var(--vcu-gold);
-  color: #000;
+  background-color: var(--fsu-garnet);
+  color: #fff;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
@@ -1133,8 +1128,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .notfound-page .notfound-content a.btn:hover {
-  background-color: #e6a700;
-  color: #000;
+  background-color: var(--fsu-garnet-hover);
+  color: #fff;
 }
 
 @media (max-width: 575.98px) {
