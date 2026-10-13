@@ -127,11 +127,14 @@ h1, h2, h3, h4, h5, h6 {
    4. Navbar
 ==================================================== */
 .navbar {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(16, 24, 32, 0.14);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .navbar .navbar-brand img {
+  filter: brightness(0) saturate(100%);
   height: 36px;
 }
 
@@ -141,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-nav .nav-link {
   border-radius: 0.25rem;
+  color: var(--vcu-black) !important;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 16px; /* Adjust to your original preference */
@@ -149,8 +153,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active {
-  background-color: var(--fsu-garnet);
-  color: #fff !important;
+  background-color: transparent;
+  color: var(--fsu-garnet) !important;
 }
 
 .nav-link-bold {
@@ -161,14 +165,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991.98px) {
   .navbar .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(16, 24, 32, 0.3);
     padding: 0.55rem 0.7rem;
   }
 
   .navbar .navbar-collapse {
-    background: rgba(16, 24, 32, 0.96);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(16, 24, 32, 0.14);
     border-radius: 0.75rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(16, 24, 32, 0.12);
     margin-top: 0.75rem;
     padding: 0.5rem 0.75rem;
   }
